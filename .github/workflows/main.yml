@@ -1,0 +1,11 @@
+name: Engine Setup
+on: workflow_dispatch
+
+jobs:
+  install:
+    runs-on: windows_latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Install
+        run: echo 'Running'
